@@ -7,7 +7,7 @@ const Student = () => {
   const fetchStudents = async () => {
     try {
       // let hostname = "http://localhost:8000";
-      let hostname = "http://restback-students.192.168.99.100.nip.io/";
+      let hostname = "http://restback-students.192.168.99.100.nip.io";
 
       let url = `${hostname}/students`;
       const resp = await axios.get(url);
@@ -21,7 +21,7 @@ const Student = () => {
     try {
       e.preventDefault();
       // let hostname = "http://localhost:8000";
-      let hostname = "http://restback-students.192.168.99.100.nip.io/";
+      let hostname = "http://restback-students.192.168.99.100.nip.io";
       let url = `${hostname}/students`;
       const resp = await axios.post(url, {
         ...formData
